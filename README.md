@@ -11,10 +11,14 @@ To start the project
 ```css
 &mdash; (—)
 
+&copy; Ⓒ
+
 :root {} == html {} with higher specificity
 
 /* Using svg with xlink:href is going to work and show the sprite file 
 only on the web/local server */
+
+/* add the local path of sprite + # + name of icon (use demo file) */
 <button class="search__button">
     <svg class="search__icon">
         <use xlink:href="/img/sprite.svg#icon-magnifying-glass" />
