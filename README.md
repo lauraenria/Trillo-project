@@ -25,6 +25,62 @@ only on the web/local server */
     </svg>
 </button>
 
+/* currentColor */
+
+div {
+    color: red;
+    border: 5px solid currentColor;
+    box-shadow: 0 0 5px solid currentColor;
+}
+
+&__item {
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+
+  &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+        // normal scale
+        transform: scaleY(0);
+        transform-origin: bottom; //default center
+        transition: transform 1s;
+    }
+
+    /* You can add different setting for different properties */
+    /* small line that become visible and the expands to the right side */
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        // initially
+        width: 3px;
+        background-color: var(--color-primary);
+        // normal scale
+        transform: scaleY(0);
+        transition: transform .2s,
+            width .4s cubic-bezier(1,0,0,1) .2s;  /* this second .2s is the delay */
+    }
+
+    /* the z-index works onlly if we have specified the position */
+    
+    {
+        position: relative;
+        z-index: 10;
+
+    }
+   
+
 ```
 
 * css custom properties (**css variables**): `--nameVariable`
@@ -34,10 +90,15 @@ only on the web/local server */
 * sprite file
 * fo svg `xlink:href`is deprecated in favor of simply `href`
 * flexbox works with text as well
+* The `:link` CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited `<a>`, `<area>`, or `<link>` element that has an `href` attribute.
+* currentColor: pick the current color reference in a class and when you assign currentColor as one of the value of the property it will show the refer color.
+
+
 
 
 ## Resources
 * [IcoMoon](https://icomoon.io/)
+* [cubic-bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
 
 ## Live!
 * [Check my project here!](happy-blackwell-trillo.netlify.com)
