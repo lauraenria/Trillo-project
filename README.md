@@ -79,6 +79,11 @@ div {
         z-index: 10;
 
     }
+
+    /* the element occupy the space it needs and the rest is calculated */
+    {
+        margin-right: auto
+    }
    
 
 ```
@@ -88,7 +93,7 @@ div {
 * SVG (Scalable Vector Graphic) are better than Icon fonts: a way to write vector graphics with code. Use app
 [IcoMoon](https://icomoon.io/)
 * sprite file
-* fo svg `xlink:href`is deprecated in favor of simply `href`
+* fo svg `xlink:href` is deprecated in favor of simply `href`
 * flexbox works with text as well
 * The `:link` CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited `<a>`, `<area>`, or `<link>` element that has an `href` attribute.
 * currentColor: pick the current color reference in a class and when you assign currentColor as one of the value of the property it will show the refer color.
