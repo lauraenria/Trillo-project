@@ -4,7 +4,7 @@
 
 To start the project
 
-* `npm run start`
+- `npm run start`
 
 ## learning tips:
 
@@ -15,7 +15,7 @@ To start the project
 
 :root {} == html {} with higher specificity
 
-/* Using svg with xlink:href is going to work and show the sprite file 
+/* Using svg with xlink:href is going to work and show the sprite file
 only on the web/local server */
 
 /* add the local path of sprite + # + name of icon (use demo file) */
@@ -73,7 +73,7 @@ div {
     }
 
     /* the z-index works onlly if we have specified the position */
-    
+
     {
         position: relative;
         z-index: 10;
@@ -84,26 +84,27 @@ div {
     {
         margin-right: auto
     }
-   
+
 
 ```
 
-* css custom properties (**css variables**): `--nameVariable`
-* background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
-* SVG (Scalable Vector Graphic) are better than Icon fonts: a way to write vector graphics with code. Use app
-[IcoMoon](https://icomoon.io/)
-* sprite file
-* fo svg `xlink:href` is deprecated in favor of simply `href`
-* flexbox works with text as well
-* The `:link` CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited `<a>`, `<area>`, or `<link>` element that has an `href` attribute.
-* currentColor: pick the current color reference in a class and when you assign currentColor as one of the value of the property it will show the refer color.
-
-
-
+- css custom properties (**css variables**): `--nameVariable`
+- background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+- SVG (Scalable Vector Graphic) are better than Icon fonts: a way to write vector graphics with code. Use app
+  [IcoMoon](https://icomoon.io/)
+- sprite file
+- fo svg `xlink:href` is deprecated in favor of simply `href`
+- flexbox works with text as well
+- The `:link` CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited `<a>`, `<area>`, or `<link>` element that has an `href` attribute.
+- currentColor: pick the current color reference in a class and when you assign currentColor as one of the value of the property it will show the refer color.
 
 ## Resources
-* [IcoMoon](https://icomoon.io/)
-* [cubic-bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
+
+- [jonasschmedtmann Github](https://github.com/jonasschmedtmann/advanced-css-course)
+- [Trillo original Github project and solution](https://github.com/jonasschmedtmann/advanced-css-course/tree/master/Trillo)
+- [IcoMoon](https://icomoon.io/)
+- [cubic-bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
 
 ## Live!
-* [Check my project here!](happy-blackwell-trillo.netlify.com)
+
+- [Check my project here!](https://happy-blackwell-trillo.netlify.com)
