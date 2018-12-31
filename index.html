@@ -1,155 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>trillo &mdash; Your all-in-one booking app</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <img src="/img/logo.png" alt="trillo logo" class="logo">
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search Hotel">
-                <button class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="/img/sprite.svg#icon-magnifying-glass" />
-                    </svg>
-                </button>
-            </form>
-            <nav class="user-nav">
-                <!-- icon box -->
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="/img/sprite.svg#icon-bookmark" />
-                    </svg>
-                    <span class="user-nav__notification">7</span>
+      <header class="header">
+        <img src="/img/logo.png" alt="trillo logo" class="logo" />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search Hotel" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="/img/sprite.svg#icon-magnifying-glass" />
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <!-- icon box -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-bookmark" />
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <!-- icon box -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-chat" />
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
+          <!-- user -->
+          <div class="user-nav__user">
+            <img
+              src="img/user.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <!-- item home -->
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home" />
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <!-- item flight -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off" />
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <!-- item car -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key" />
+                </svg>
+                <span>Car Rental</span>
+              </a>
+            </li>
+            <!-- item tours -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map" />
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <!-- LEGAL TEXT -->
+          <div class="legal">&copy; 2018 by trillo. All rights reserved.</div>
+        </nav>
+
+        <main class="hotel-view">
+          <!-- gallery -->
+          <div class="gallery">
+            <!-- item 1 -->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Photo of hotel-1"
+                class="gallery__photo"
+              />
+            </figure>
+            <!-- item 2 -->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Photo of hotel-2"
+                class="gallery__photo"
+              />
+            </figure>
+            <!-- item 3-->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Photo of hotel-3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Las Palmas</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star" />
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star" />
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star" />
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star" />
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star" />
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin" />
+              </svg>
+              <button class="btn-inline">Albuifeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+          <!-- details -->
+          <div class="details">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="raccomend">
+                <p class="raccomend_count">
+                  Lucy and 3 others racccomend this hotel.
+                </p>
+                <div class="raccomend_friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="raccomend_photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 1"
+                    class="raccomend_photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 1"
+                    class="raccomend_photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 1"
+                    class="raccomend_photo"
+                  />
                 </div>
-                <!-- icon box -->
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="/img/sprite.svg#icon-chat" />
-                    </svg>
-                    <span class="user-nav__notification">13</span>
-                </div>
-                <!-- user -->
-                <div class="user-nav__user">
-                    <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
-                    <span class="user-nav__user-name">Jonas</span>
-                </div>
-            </nav>
-
-        </header>
-        <div class="content">
-            <nav class="sidebar">
-                <ul class="side-nav">
-                    <!-- item home -->
-                    <li class="side-nav__item side-nav__item--active">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-home" />
-                            </svg>
-                            <span>Hotel</span>
-                        </a>
-                    </li>
-                    <!-- item flight -->
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off" />
-                            </svg>
-                            <span>Flight</span>
-                        </a>
-                    </li>
-                    <!-- item car -->
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-key" />
-                            </svg>
-                            <span>Car Rental</span>
-                        </a>
-                    </li>
-                    <!-- item tours -->
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-map" />
-                            </svg>
-                            <span>Tours</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- LEGAL TEXT -->
-                <div class="legal">
-                    &copy; 201 8 by trillo. All rights reserved.
-                </div>
-            </nav>
-
-
-
-            <main class="hotel-view">
-                <!-- gallery -->
-                <div class="gallery">
-                    <!-- item 1 -->
-                    <figure class="gallery__item">
-                        <img src="img/hotel-1.jpg" alt="Photo of hotel-1" class="gallery__photo">
-                    </figure>
-                    <!-- item 2 -->
-                    <figure class="gallery__item">
-                        <img src="img/hotel-2.jpg" alt="Photo of hotel-2" class="gallery__photo">
-                    </figure>
-                    <!-- item 3-->
-                    <figure class="gallery__item">
-                        <img src="img/hotel-3.jpg" alt="Photo of hotel-3" class="gallery__photo">
-                    </figure>
-                </div>
-
-                <div class="overview">
-                    <h1 class="overview__heading">Hotel Las Palmas</h1>
-                    <div class="overview__stars">
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star" />
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star" />
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star" />
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star" />
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star" />
-                        </svg>
-                    </div>
-
-                    <div class="overview__location">
-                        <svg class="overview__icon-location">
-                            <use xlink:href="img/sprite.svg#icon-location-pin" />
-                        </svg>
-                        <button class="btn-inline">Albuifeira, Portugal</button>
-                    </div>
-
-                    <div class="overview__rating">
-                        <div class="overview__rating-average">8.6</div>
-                        <div class="overview__rating-count">429 votes</div>
-                    </div>
-
-                </div>
-
-            </main>
-        </div>
+              </div>
+            </div>
+            <div class="user-reviews">User reviews</div>
+          </div>
+        </main>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -98,6 +98,10 @@ div {
 - The `:link` CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited `<a>`, `<area>`, or `<link>` element that has an `href` attribute.
 - currentColor: pick the current color reference in a class and when you assign currentColor as one of the value of the property it will show the refer color.
 
+* CSS Masks:
+  - mask-image
+  - mask-size
+
 ## Resources
 
 - [jonasschmedtmann Github](https://github.com/jonasschmedtmann/advanced-css-course)
