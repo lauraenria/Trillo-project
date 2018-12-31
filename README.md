@@ -102,6 +102,14 @@ div {
   - mask-image
   - mask-size
 
+The `:last-of-type` selector allows you to target the last occurence of an element within its container. It targets a particular type of element in a particular arrangement _with relation to similar siblings, not all siblings._
+
+```css
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+```
+
 ## Resources
 
 - [jonasschmedtmann Github](https://github.com/jonasschmedtmann/advanced-css-course)
