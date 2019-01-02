@@ -318,7 +318,7 @@
 .list {
   list-style: none;
   margin: 3rem 0;
-  padding: 3rem;
+  padding: 3rem 0;
   border-top: var(--line);
   border-bottom: var(--line);
 
@@ -351,9 +351,9 @@
   }
 }
 
-// RACCOMEND
+// RECCOMEND
 
-.racommend {
+.recommend {
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
 
@@ -392,7 +392,6 @@
   overflow: hidden;
 
   &__text {
-    font-weight: 800;
     margin-bottom: 2rem;
     z-index: 10;
     position: relative;
@@ -417,7 +416,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 4rem;
   }
 
   &__user-date {
@@ -442,5 +441,77 @@
     color: var(--color-grey-light-2);
     font-family: sans-serif;
     z-index: 1;
+  }
+}
+
+// CALL TO ACTION
+
+.cta {
+  padding: 3.5rem;
+  text-align: center;
+
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+// BUTTON BTN
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 2rem;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
