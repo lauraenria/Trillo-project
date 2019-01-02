@@ -110,6 +110,12 @@ The `:last-of-type` selector allows you to target the last occurence of an eleme
 }
 ```
 
+- [Glyphs|CSS-Tricks](https://css-tricks.com/snippets/html/glyphs/)
+
+```css
+ &::before { // CSS TRICK Glyph &ldquo; content: "\201C"; }
+```
+
 ## Resources
 
 - [jonasschmedtmann Github](https://github.com/jonasschmedtmann/advanced-css-course)
